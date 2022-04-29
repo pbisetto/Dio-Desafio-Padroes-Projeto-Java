@@ -14,7 +14,7 @@ public class Test {
     public static void main(String[] args) {
 
         // Singleton
-
+        System.out.println("\n---Teste do singleton---\n");
         SingletonLazy lazy = SingletonLazy.getInstancia();
         System.out.println(lazy);
         lazy = SingletonLazy.getInstancia();
@@ -31,7 +31,8 @@ public class Test {
         System.out.println(lazyHolder);
 
         // Strategy
-
+        
+        System.out.println("\n\n---Teste do robo---\n");
         Comportamento defensivo = new ComportamentoDefensivo();
         Comportamento normal = new ComportamentoNormal();
         Comportamento agressivo = new ComportamentoAgressivo();
@@ -48,9 +49,10 @@ public class Test {
         robo.mover();
 
         // Facade
-
+        
+        System.out.println("\n\n---Teste da facade---\n");
         Facade facade = new Facade();
-        facade.migrarCliente("Venilton", "14801788");
+        facade.migrarCliente("23456728743","Venilton", "14801788");
     }
 
 }
