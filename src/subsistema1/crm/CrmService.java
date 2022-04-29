@@ -12,5 +12,7 @@ public class CrmService {
         System.out.println(cep);
         System.out.println(cidade);
         System.out.println(estado);
+        System.out.println(contatos.getEmail());
+		System.out.println(contatos.getLinkedin());
     }
 }
